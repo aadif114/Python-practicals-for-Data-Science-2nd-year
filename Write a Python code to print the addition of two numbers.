@@ -1,0 +1,5 @@
+numb = list(map(int, input("Enter numbers separated by spaces: ").split()))
+
+tot = sum(numb)
+
+print("Total addition of list is =", tot)
