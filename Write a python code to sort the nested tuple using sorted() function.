@@ -1,0 +1,12 @@
+
+nested_tuple = (
+    ("Rahul Sharma", 101),
+    ("Priya Patel", 103),
+    ("Amit Verma", 102)
+)
+
+
+sorted_students = sorted(nested_tuple, key=lambda x: x[1])
+
+
+print("Sorted Students (by roll number):", sorted_students)
