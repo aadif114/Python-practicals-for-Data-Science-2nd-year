@@ -1,0 +1,8 @@
+t_t_s = input("Enter the text: ")
+
+s_w = input("Enter the word to search for: ")
+
+if s_w in t_t_s:
+print(f"The word '{s_w}' was found in the text.")
+else:
+print(f"The word '{s_w}' was NOT found in the text.")
