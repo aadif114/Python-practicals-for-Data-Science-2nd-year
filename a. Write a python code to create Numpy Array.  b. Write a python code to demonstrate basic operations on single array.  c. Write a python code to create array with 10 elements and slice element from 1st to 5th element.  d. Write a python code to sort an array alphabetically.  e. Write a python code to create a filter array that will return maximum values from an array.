@@ -1,0 +1,43 @@
+import numpy as np
+
+# 4a. Create a NumPy Array
+arr = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
+
+print("Original Array:")
+print(arr)
+
+# 4b. Basic Operations on the Array
+print("\nBasic Operations:")
+print("Addition (+5):", arr + 5)
+print("Subtraction (-5):", arr - 5)
+print("Multiplication (*2):", arr * 2)
+print("Division (/2):", arr / 2)
+print("Square:", arr ** 2)
+
+# 4c. Slice from 1st to 5th Element
+print("\nSliced Array (1st to 5th Element):")
+print(arr[0:5])
+
+# 4d. Sort an Alphabetical Array
+fruits = np.array(["Mango", "Apple", "Banana", "Orange", "Grapes"])
+
+print("\nOriginal Fruit Array:")
+print(fruits)
+
+sorted_fruits = np.sort(fruits)
+
+print("Sorted Fruit Array:")
+print(sorted_fruits)
+
+# 4e. Filter Array to Return Maximum Value(s)
+numbers = np.array([10, 50, 30, 50, 20, 50])
+
+max_value = np.max(numbers)
+filtered_array = numbers[numbers == max_value]
+
+print("\nNumber Array:")
+print(numbers)
+
+print("Maximum Value:", max_value)
+print("Filtered Array (Maximum Values):")
+print(filtered_array)
