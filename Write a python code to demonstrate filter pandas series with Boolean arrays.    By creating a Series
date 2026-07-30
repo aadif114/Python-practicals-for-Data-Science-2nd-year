@@ -1,0 +1,11 @@
+import pandas as pd
+print("S112 Aditya Singh")
+ageofpeople = pd.Series([45, 67, 89, 34, 41, 76])
+
+print("Original Series:")
+print(ageofpeople)
+
+filtered = ageofpeople[ageofpeople > 70]
+
+print("People at gym who are 70+:")
+print(filtered)
