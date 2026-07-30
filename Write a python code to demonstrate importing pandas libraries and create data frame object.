@@ -1,0 +1,9 @@
+import pandas as pd
+
+s112 = pd.read_excel("StressLevelDataset.xlsx")
+print("S112 Aditya Singh")
+print("DataFrame:")
+print(s112)
+
+print("First 5 Rows:")
+print(s112.head())
