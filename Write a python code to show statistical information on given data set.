@@ -1,0 +1,9 @@
+import pandas as pd
+print("S112 Aditya Singh")
+s112 = pd.read_excel("StressLevelDataset.xlsx")
+
+print("Statistical Information:")
+print(s112.describe())
+
+print("Complete Summary:")
+print(s112.describe(include="all"))
