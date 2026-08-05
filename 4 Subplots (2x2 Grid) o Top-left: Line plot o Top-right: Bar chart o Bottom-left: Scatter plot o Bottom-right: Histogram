@@ -1,0 +1,44 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+aadi = [1, 2, 3, 4, 5]
+s112 = [2, 4, 6, 8, 10]
+
+categories = ["DS", "Scala", "OS", "Python"]
+scores = [65, 70, 74, 60]
+
+scatter_x = [5, 7, 8, 7, 6, 9, 5]
+scatter_y = [99, 86, 87, 88, 100, 86, 103]
+
+hist_data = np.random.normal(size=100)
+
+plt.figure(figsize=(10, 8))
+
+plt.subplot(2, 2, 1)
+plt.plot(aadi, s112, color='blue', marker='o')
+plt.title("Line Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
+
+plt.subplot(2, 2, 2)
+plt.bar(categories, scores, color='orange')
+plt.title("Bar Chart")
+plt.xlabel("Subjects")
+plt.ylabel("Scores")
+
+plt.subplot(2, 2, 3)
+plt.scatter(scatter_x, scatter_y, color='green', s=100)
+plt.title("Scatter Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
+
+plt.subplot(2, 2, 4)
+plt.hist(hist_data, bins=20, color='purple')
+plt.title("Histogram")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.grid(True)
+
+plt.tight_layout()
+
+plt.show()
