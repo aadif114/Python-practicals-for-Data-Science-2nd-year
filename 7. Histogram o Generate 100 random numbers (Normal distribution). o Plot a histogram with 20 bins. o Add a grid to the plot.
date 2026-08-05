@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+s112 = np.random.normal(size=100)
+
+plt.hist(s112, bins=20)
+
+plt.title("Histogram of Random Numbers")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+
+plt.grid(True)
+
+plt.show()
