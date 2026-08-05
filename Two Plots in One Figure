@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+
+aadi = [1, 2, 3, 4, 5]
+s112 = [2, 4, 6, 8, 10]
+sycs = [1, 4, 9, 16, 25]
+
+plt.figure(figsize=(10, 4))
+
+plt.subplot(1, 2, 1)
+plt.plot(aadi, s112, marker='o')
+plt.title("Line Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
+
+plt.subplot(1, 2, 2)
+plt.bar(aadi, sycs)
+plt.title("Bar Chart")
+plt.xlabel("X")
+plt.ylabel("Y")
+
+plt.tight_layout()
+
+plt.show()
