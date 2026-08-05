@@ -1,0 +1,45 @@
+import matplotlib.pyplot as plt
+
+s112 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+aadi = [150, 200, 250, 300, 280, 350]
+sycs = [180, 220, 270, 320, 300, 400]
+
+plt.figure(figsize=(8, 5))
+
+plt.plot(s112, aadi,
+         color='blue',
+         linestyle='--',
+         marker='o',
+         linewidth=2,
+         label='Sales 2023')
+
+plt.plot(s112, sycs,
+         color='green',
+         linestyle='-',
+         marker='s',
+         linewidth=2,
+         label='Sales 2024')
+
+plt.title("Monthly Sales Comparison (2023 vs 2024)")
+plt.xlabel("Months")
+plt.ylabel("Sales")
+
+plt.legend()
+
+max_sales = max(sycs)
+max_index = sycs.index(max_sales)
+max_month = s112[max_index]
+
+plt.annotate(
+    f'Highest Sales\n{max_month}: {max_sales}',
+    xy=(max_month, max_sales),
+    xytext=(max_month, max_sales + 30),
+    arrowprops=dict(facecolor='black', arrowstyle='->'),
+    ha='center'
+)
+
+plt.grid(True)
+
+plt.savefig("sales_comparison.png")
+
+plt.show()
