@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+s112 = ["Data Structures", "Scala for DS", "Operating System", "Python for DS"]
+aadi = [65, 70, 74, 60]
+
+explode = (0, 0, 0, 0.1)
+
+plt.pie(aadi,
+        labels=s112,
+        autopct='%1.1f%%',
+        explode=explode,
+        startangle=90)
+
+plt.title("Student Scores")
+
+plt.show()
