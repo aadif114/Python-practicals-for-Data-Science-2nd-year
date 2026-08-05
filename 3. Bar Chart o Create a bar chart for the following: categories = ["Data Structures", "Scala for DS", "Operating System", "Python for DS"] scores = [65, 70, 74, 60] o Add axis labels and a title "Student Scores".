@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+s112 = ["Data Structures", "Scala for DS", "Operating System", "Python for DS"]
+aadi = [65, 70, 74, 60]
+
+plt.bar(s112, aadi)
+
+plt.title("Student Scores")
+plt.xlabel("Subjects")
+plt.ylabel("Scores")
+
+plt.show()
